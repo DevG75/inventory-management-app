@@ -38,6 +38,21 @@ class IMS:
         btn_sales=Button(LeftMenu,text="Sales",image=self.icon_side,compound=LEFT,padx=5,anchor="w",font=("times new roman",20, "bold"),bg="white", bd=3, cursor="hand2").pack(side=TOP, fill=X)
         btn_exit=Button(LeftMenu,text="Exit",image=self.icon_side,compound=LEFT,padx=5,anchor="w",font=("times new roman",20, "bold"),bg="white", bd=3, cursor="hand2").pack(side=TOP, fill=X)
 
+        #--Content--#
+        self.lbl_employee=Label(self.root,text="Total Employee\n[ 0 ]",bd=5,relief=RIDGE,bg="#33bbf9", fg="white", font=("goudy old style",20,"bold"))
+        self.lbl_employee.place(x=300, y=120, height=150, width=300)
+
+        self.lbl_supplier=Label(self.root,text="Total Supplier\n[ 0 ]",bd=5,relief=RIDGE,bg="#ff5722", fg="white", font=("goudy old style",20,"bold"))
+        self.lbl_supplier.place(x=650, y=120, height=150, width=300)
+
+        self.lbl_category=Label(self.root,text="Total Category\n[ 0 ]",bd=5,relief=RIDGE,bg="#009688", fg="white", font=("goudy old style",20,"bold"))
+        self.lbl_category.place(x=1000, y=120, height=150, width=300)
+
+        self.product=Label(self.root,text="Total Product\n[ 0 ]",bd=5,relief=RIDGE,bg="#607d8b", fg="white", font=("goudy old style",20,"bold"))
+        self.product.place(x=300, y=300, height=150, width=300)
+
+        self.lbl_sales=Label(self.root,text="Total Sales\n[ 0 ]",bd=5,relief=RIDGE,bg="#ffc107", fg="white", font=("goudy old style",20,"bold"))
+        self.lbl_sales.place(x=650, y=120, height=150, width=300)
 
         #--footer--#
         lbl_footer=Label(self.root, text="IMS- Inventory Management System | Developed by Debabrata Ghosh\nFor any technical queries, email us at support@ims.com",font=("times new roman", 12),bg="#4d636d", fg="white").pack(side=BOTTOM, fill=X)
