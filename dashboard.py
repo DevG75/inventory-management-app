@@ -37,6 +37,11 @@ class IMS:
         btn_product=Button(LeftMenu,text="Product",image=self.icon_side,compound=LEFT,padx=5,anchor="w",font=("times new roman",20, "bold"),bg="white", bd=3, cursor="hand2").pack(side=TOP, fill=X)
         btn_sales=Button(LeftMenu,text="Sales",image=self.icon_side,compound=LEFT,padx=5,anchor="w",font=("times new roman",20, "bold"),bg="white", bd=3, cursor="hand2").pack(side=TOP, fill=X)
         btn_exit=Button(LeftMenu,text="Exit",image=self.icon_side,compound=LEFT,padx=5,anchor="w",font=("times new roman",20, "bold"),bg="white", bd=3, cursor="hand2").pack(side=TOP, fill=X)
+
+
+        #--footer--#
+        lbl_footer=Label(self.root, text="IMS- Inventory Management System | Developed by Debabrata Ghosh\nFor any technical queries, email us at support@ims.com",font=("times new roman", 12),bg="#4d636d", fg="white").pack(side=BOTTOM, fill=X)
+        
 root=Tk()
 obj=IMS(root)
 root.mainloop()
