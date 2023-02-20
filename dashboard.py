@@ -13,7 +13,8 @@ class IMS:
 
         #--button--#
         btn_logout=Button(self.root,text="Logout", font=("times new roman",15,"bold"), bg="yellow", cursor="hand2").place(x=1150, y=10, height=50, width=150)
-
+        #--clock--#
+        self.lbl_clock=Label(self.root, text="Welcome to Inventory Management System\t\t Date: DD-MM-YYYY\t\t Time: HH:MM:SS",font=("times new roman", 15), bg="#4d636d", fg="white", anchor="w").place(x=0, y=70, relwidth=1, height=30)
 root=Tk()
 obj=IMS(root)
 root.mainloop()
