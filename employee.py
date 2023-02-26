@@ -1,5 +1,5 @@
 from tkinter import*
-from PIL import Image,ImageTk
+from PIL import Image, ImageTk
 from tkinter import ttk
 
 class employeeClass:
@@ -46,11 +46,11 @@ class employeeClass:
         lbl_gender=Label(self.root,text="Gender", font=("goudy old style",15),bg="white").place(x=350,y=150)
         lbl_contact=Label(self.root,text="Contact", font=("goudy old style",15),bg="white").place(x=750,y=150)
 
-        txt_empid=Entry(self.root,textvariable=self.var_emp_id, font=("goudy old style",15),bg="white").place(x=150,y=150,width=150)
+        txt_empid=Entry(self.root,textvariable=self.var_emp_id, font=("goudy old style",15),bg="lightyellow").place(x=150,y=150,width=180)
         cmb_gender=ttk.Combobox(self.root,textvariable=self.var_gender,values=("Select", "Male", "Female", "Other"), state="readonly", justify=CENTER, font=("goudy old style",15))
-        cmb_gender.place(x=500,y=150,width=150)
+        cmb_gender.place(x=500,y=150,width=180)
         cmb_gender.current(0)
-        txt_contact=Entry(self.root,textvariable=self.var_contact, font=("goudy old style",15),bg="white").place(x=850,y=150,width=150)
+        txt_contact=Entry(self.root,textvariable=self.var_contact, font=("goudy old style",15),bg="lightyellow").place(x=850,y=150,width=180)
 
 if __name__=="__main__":
     root=Tk()
